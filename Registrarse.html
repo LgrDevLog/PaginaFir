@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon/images.jpg" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>I.E Francisco Izquierdo Rios</title>
+</head>
+
+<body>
+
+  <section class="section-1">
+    <div class="leaves">
+      <div class="set">
+      </div>
+    </div>
+    <form onsubmit="register()" action="#" class="registration-form">
+      <h2>Registrarse</h2>
+      <div class="form-group">
+        <label for="f_name" class="form-label">Nombre</label>
+        <input type="text" id="f_name" class="form-control" name="f_name" placeholder="Nombre Completo" required="required">
+      </div>
+      <div class="form-group">
+        <label for="l_name" class="form-label">Apellidos</label>
+        <input type="text" id="l_name" class="form-control" name="l_name" placeholder="Apellidos" required="required">
+      </div>
+      <div class="form-group">
+        <label for="birth_date" class="form-label">Fecha de Nacimiento</label>
+        <input type="date" id="birth_date" class="form-control" name="birth_date" required="required">
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Número de Celular</label>
+        <input type="tel" id="phone" class="form-control" name="phone" placeholder="Número de Celular" maxlength="9" pattern="\d{9}" title="Debe contener 9 dígitos" required="required">
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" id="email" class="form-control" name="email" placeholder="@gmail.com" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" title="Debe ser un correo de Gmail" required="required">
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Contraseña</label>
+        <input id="password" type="password" class="form-control" name="password" placeholder="********" required="required">
+        <i toggle="#password" class="fa fa-fw fa-eye password-toggle"></i>
+      </div>
+      <div class="form-group">
+        <label for="c_password" class="form-label">Confirmar Contraseña</label>
+        <input id="c_password" type="password" class="form-control" name="c_password" placeholder="********" required="required">
+        <i toggle="#c_password" class="fa fa-fw fa-eye password-toggle"></i>
+      </div>
+      <div class="form-group">
+        <div class="checkbox-area">
+          <input id="checkbox1" type="checkbox" required>
+          <label for="checkbox1">Acepto los términos y condiciones</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Registrarse</button>
+      </div>
+    </form>
+    
+  </section>
+</body>
+</html>
